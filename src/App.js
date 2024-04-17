@@ -20,9 +20,9 @@ const [displayText, setDisplayText] = useState('Text Field');
   return (
     <div className="App">
       <body className='App-body'>
+        <h1>Drum Machine</h1>
         <div id="drum-machine">
-          <h1>Drum Machine</h1>
-          <div id="clip-display">{displayText}</div>
+          <div id="display">{displayText}</div>
           <div id="clip-bank">
             {audioClips.map((clip) => (
               <button 
